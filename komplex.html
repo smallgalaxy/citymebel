@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content="width=device-width">
+	<title>CITYMEBEL</title>
+	<link rel="stylesheet" href="css/styleKomplex.css">
+	<link rel="stylesheet" href="css/priloader.css">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/komplex/komplex_adaptation.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/komplex/forma_komplex.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class='body'>
+	<script>
+		window.onload = function () {
+		    document.body.classList.add('loaded_hiding');
+		    window.setTimeout(function () {
+		    	document.body.classList.add('loaded');
+		    	document.body.classList.remove('loaded_hiding');
+		    }, 500);
+		}
+	</script>
+
+	<div class="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<div class='fon'>
+		<header id='header_return' class="header">
+			<div class="container">
+				<nav class='menu_and_logo'>
+					<div class="logo_text" onclick="document.location='index.html'"><p class='logo_text_p'>CITYMEBEL</p></div>
+
+					<div class='div1 menu_right' onclick="document.location='index.html#section_product'"><p class='menu_right_p'>Заказать проект</p></div>
+
+					<div class='menu_right' onclick="document.location='index.html#сontacts'"><p class='menu_right_p'>Сотрудничество</p></div>
+
+					<div class="contacts_text"><p class="contacts_text_p">7(913)912-31-04</p></div>
+				</nav>
+
+				<div id='onas' class="main">
+					<div class='video'>
+						<img src="img/komplex.jpg" width='100%'>
+					</div>
+
+					<div class="text">
+						<h2>Детский комплекс</h2>
+
+						<div class='ptext'>
+								<p class='ptext_p'>После заполнения анкеты с вами свяжется наш оператор, с которым можно уточнить дату встречи с мастером.<br>Специалист предоставит вам образцы материала и цвета.</p>
+						</div>
+					</div>
+
+					<div class='forma'>
+						<form class='form' method="post" name='test' id='form'>
+							<p class='form_p'>Введите Ваше имя <a class='red'>*</a></p>
+							<textarea rows='1' class='input name' type="text" name="name" placeholder="Николай" id='name'></textarea>
+
+							<p class='form_p'>Телефон для связи <a class='red'>*</a></p>
+							<textarea rows='1' class='input contact' type="text" name="contact" placeholder="8-(999)-888-88-88" id='contact'></textarea>
+
+							<p class='form_p'>Город <a class='red'>*</a></p>
+							<textarea rows='1' class='input city' type="text" name="city" placeholder="Новосибирск, Бердск, Искитим" id='city'></textarea>
+
+							<label class="custom-checkbox">
+								<input id='on_off' class='on_off' type="checkbox" name="happy">
+								<span class='form_p_two'>Я соглашаюсь с&nbsp;<a href='privat.html' class='form_p_two_a'>политикой конфиденциальности</a></span>
+								<p class="form__error">Дайте согласие на обработку данных.</p>
+							</label>
+
+							  <div class='position_but_two'>
+								<input class='but' type="submit" value='Заказать'>
+							</div>
+							
+							<input type="hidden" value="Детский комплекс" name="subject">
+						</form>
+					</div>
+				</div>
+
+				<div class='image_nad'>
+					<img src="img/men_one.png">
+				</div>
+			</div>
+		</header>	
+	</div>
+
+	<footer id='сontacts' class='footer'>
+		<div class='footer_block'>
+			<div class='info'>
+				<div class='info_left'>
+					<a href='index.html#header_return' class='one'>CITYMEBEL</a>
+					<h2>savin-81@mail.ru</h2>
+					<a href='privat.html' class='two'>Политика конфеденциальности</a>
+					<p>ООО Ситимебель</p>
+				</div>
+
+				<div class='info_right'>
+					<div class='top'>
+						<a class='three' href="index.html#header_return">О нас</a>
+						<a class='four' href="index.html#section_product">Продукция</a>
+					</div>
+					
+					<div class='bottom'>
+						<p>По вопросам пишите на savin-81@mail.ru, г.Новосибирск, ул Мира 62</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
