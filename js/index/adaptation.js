@@ -2,8 +2,6 @@ $(document).ready(function () {
 	adaptation();
 
 	$(window).resize(function () {
-		alert(window.innerWidth);
-		alert(window.innerHeight);
 		adaptation();
 	});
 
